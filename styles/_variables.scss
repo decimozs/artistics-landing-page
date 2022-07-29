@@ -1,0 +1,19 @@
+.nav-btn{
+    border: 2px solid var(--pink-clr);
+    background: transparent;
+    border-radius: 10rem;
+    
+
+    a{
+        font-family: 'Poppins';
+        font-weight: bold;
+        color: var(--pink-clr);
+        text-transform: uppercase;
+        font-size: 1.3rem;
+    }
+}
+
+.about-btn{
+    width: 80px;
+    height: 80px;
+}

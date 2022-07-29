@@ -1,0 +1,182 @@
+@forward '../styles';
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Roboto+Mono:wght@100;200;300;400;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: initial;
+    overflow-x: hidden;
+}
+
+body{
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Roboto Mono', monospace;
+
+    .wrapper{
+        width: 100%;
+        height: 100vh;
+        background-image: url(../assets/header.gif);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position-y:  100% ;
+        object-fit: cover;
+        position: relative;
+        top: 0;
+        left: 0;
+    }
+
+    .navigations-container,
+    .header-container,
+    .artistic-container,
+    .features-container,
+    .waiting-container,
+    .footer-container{
+        margin: auto;
+    }
+
+    .navigations-container{
+        width: 100%;
+    }
+
+    .header-container{
+        width: 100%;
+        height: 80vh;
+        max-width: 2500px;
+
+        .header-content{
+            width: 100%;
+            max-width: 1500px;
+        }
+    }
+
+    .artistic-container{
+        width: 100%;
+        height: 110vh;
+        background-image: url(../assets/curved.svg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        object-fit: cover;
+        position: relative;
+        top: 0;
+        left: 0;
+
+        .artistic-content{
+            width: 100%;
+            max-width: 1500px;
+
+            .artistic-snippets{
+                width: 100%;
+                max-width: 800px;
+            }
+        }
+    }
+
+    .features-container{
+
+        .features-content:nth-child(1){
+            background: url(../assets/fe1.svg);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            position: relative;
+            top: 0;
+            left: 0;
+        }
+        .features-content:nth-child(2){
+            background: url(../assets/fe2.svg);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            position: relative;
+            top: 0;
+            left: 0;
+        }
+        .features-content:nth-child(3){
+            background: url(../assets/fe3.svg);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            position: relative;
+            top: 0;
+            left: 0;
+        }
+        .features-content:nth-child(4){
+            background: url(../assets/fe4.svg);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            position: relative;
+            top: 0;
+            left: 0;
+        }
+        
+
+        .features-content{
+            width: 100%;
+            margin: 5rem 0;
+
+            .features{
+                width: 100%;
+                max-width: 600px;
+
+                .logo{
+                    width: 100%;
+                }
+            }
+
+            .features-snippets1{
+                padding: 1.3rem;
+                width: 100%;
+                max-width: 450px;
+            }
+        }
+
+    }
+
+    .waiting-container{
+            width: 100%;
+            height: 100vh;
+            background-image: url(../assets/wait.svg);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            object-fit: cover;
+            position: relative;
+            top: 0;
+            left: 0;
+    
+        .waiting-content{
+                width: 100%;
+                max-width: 500px;
+                
+        }
+    }
+
+    .footer-container{
+        width: 100%;
+        margin-top: 10rem;
+        background: var(--pink-clr);
+
+        .footer-snippets{
+            color: var(--pink-clr);
+        }
+    }
+
+    .about-container{
+        width: 100%;
+        height: 100vh;
+        background: var(--pink-clr);
+
+        .about-content{
+            width: 100%;
+        }
+    }
+}

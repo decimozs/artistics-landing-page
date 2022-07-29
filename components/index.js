@@ -1,0 +1,6 @@
+export { default as Navigations } from './Navigations'
+export { default as Header } from './Header'
+export { default as Artistic } from './Artistic'
+export { default as Features } from './Features'
+export { default as Waiting } from './Waiting'
+export { default as Footer } from './Footer'

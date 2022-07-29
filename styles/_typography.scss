@@ -1,0 +1,14 @@
+p{
+    font-family: 'Roboto Mono', monospace;
+    font-weight: bold;
+    line-height: 1.5rem;
+    text-transform: capitalize;
+}
+
+.waiting-snippets{
+    font-family: 'Roboto Mono', monospace;
+    font-weight: bold;
+    -webkit-text-fill-color: var(--gray-clr);
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: var(--black-clr);
+}
