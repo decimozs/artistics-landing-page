@@ -12,17 +12,17 @@ const Header = () => {
   }, []);
 
   return (
-    
     <div className='header-container flex items-center justify-center flex-col'>
       <div className='header-content p-6 flex items-center justify-center m-auto'>
-        <Image src={header} data-aos="fade-up"></Image>
+        {/* Add the alt attribute here */}
+        <Image src={header} alt="Header Title" data-aos="fade-up" />
       </div>
       <div className='header-navigator flex items-center justify-center w-24'>
-        <Image src={navi} width={100} height={100} ></Image>
+        {/* Add the alt attribute here */}
+        <Image src={navi} width={100} height={100} alt="Navigational Butterfly" />
       </div>
     </div>
-
-  )
-}
+  );
+};
 
 export default Header
