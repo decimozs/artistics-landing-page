@@ -12,17 +12,16 @@ const Artistic = () => {
 
 
   return (
-    
     <div className='artistic-container flex items-center justify-center m-auto'>
       <div className='artistic-content p-8 flex items-center flex-col justify-center gap-5 m-auto'>
-        <Image src={artistic} data-aos="fade-up" ></Image>
+        {/* Add the alt prop here */}
+        <Image src={artistic} alt="Artistic Work Description" data-aos="fade-up" />
         <div className='artistic-snippets'>
-        <p className='' data-aos="fade-left">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam accumsan eget nulla sed malesuada. Cras pretium mollis eros, id feugiat massa consectetur nec. Curabitur blandit, urna eget lacinia pulvinar, mauris mi pretium ex, a bibendum velit purus vestibulum ante. Morbi scelerisque varius diam, eget consectetur lectus.</p>
+          <p className='' data-aos="fade-left">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam accumsan eget nulla sed malesuada. Cras pretium mollis eros, id feugiat massa consectetur nec. Curabitur blandit, urna eget lacinia pulvinar, mauris mi pretium ex, a bibendum velit purus vestibulum ante. Morbi scelerisque varius diam, eget consectetur lectus.</p>
         </div>
       </div>
     </div>
-
-  )
-}
+  );
+};
 
 export default Artistic

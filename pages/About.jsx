@@ -13,25 +13,25 @@ const About = () => {
   }, []);
 
   return (
-    
-    <div className='about-container m-auto flex items-center justify-center '  >
+    <div className='about-container m-auto flex items-center justify-center'>
       <div className='about-content flex items-center justify-center w-full max-w-2xl flex-col gap-12 m-auto'>
-        <Image src={logo} data-aos="zoom-in" ></Image>
+        {/* Add alt attribute here */}
+        <Image src={logo} alt="About Title" data-aos="zoom-in" />
         <div className='about-snippets flex items-center justify-center flex-row gap-4 w-full'>
-        <p className='text-lg text-center' data-aos="zoom-in">This platform is a minimalist pixel-related website that contains gif tools and formats. This project is for educational purposes only.</p>
+          <p className='text-lg text-center' data-aos="zoom-in">Los Angeles based Experimental Artist puraumi.</p>
         </div>
       </div>
       <Link href="/">
-      <button className='about-btn rounded-full bg-black absolute top-5 right-5'>
-      <a className='text-white text-5xl'>X</a>
-      </button>
+        <button className='about-btn rounded-full bg-black absolute top-5 right-5'>
+          <a className='text-white text-5xl'>X</a>
+        </button>
       </Link>
       <div className='pandax absolute bottom-5 left-5'>
-      <Image src={panda} width={250} height={200} ></Image>
+        {/* Add alt attribute here */}
+        <Image src={panda} width={250} height={200} alt="Panda Animation" />
       </div>
     </div>
-
-  )
+  );
 }
 
 export default About
